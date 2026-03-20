@@ -1,17 +1,15 @@
-// Sintaxe da funcao
+//sintaxe da função
 /*
-    Function nomeDaFuncao (parametro){
-        //passos a serem executados
-        
-        }
-        */
+function nomeDaFuncao (parâmetros){
+    //passos a seremexecutados
+}
+*/
+//Desafio: Imprimir produto e preço
+//ultilizando o template string
 
-        const produto1 = "Notebook";
-        const precol = 3500;
+const produto1 = "Notebook";
+const preco1 = 3500;
 
+console.log(`Produto: ${produto1} 
 
-        //Desafio imrpimir produto e preço
-        // utilizando template string
-    
-            console.log('Produto: $(produto1');
-            console.log('Preco: $(preco2)');
+Preço:  ${preco1} reais`);
