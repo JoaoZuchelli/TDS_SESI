@@ -1,26 +1,29 @@
-
 /*
-atalho comentario de varias linhas:
-alt + shifr + A
+Atalho comentário de várias linhas:
+alt + shift + A 
 
-Desafio: criar uma funcao que receba preco e desconto em %
+Desafio:
+Criar uma função que receba preço e desconto em %
 e mostre o valor final com desconto.
-Criar outra funcao que receba preco e quantidade e mostre o valor total da compra.
+Criar outra função que receba preço e quantidade
+e mostre o valor total da compra
 
 */
 
-
-function criarCalcularDesconto (preco, desconto){
-    const valorfinal = preco - (preco * desconto /100);
-        console.log(`O valor final do produto foi de: ${valorfinal}`);   
+function calcularDesconto (preco, desconto,) {
+    let desconto2 = preco * (desconto / 100);
+    let precoFinal = preco - desconto2
+    return precoFinal;
 }
 
-criarCalcularDesconto(1000, 5);
-
-function (){
-
-function calcularTotal (preco, quantidade);
-const valortotal = preco * quantidade;
-console.log(`O valor total foi de: ${valortotal}`);
-
+function calcularTotal (preco, qtd) {
+    let total = preco * qtd;
+    return total;
 }
+
+let resultado = calcularDesconto(1000, 5);
+let resultado2 = calcularTotal(100, 12);
+
+console.log(`Total do pedido: ${resultado2}`);
+console.log(`Preco com desconto: ${resultado}`);
+
