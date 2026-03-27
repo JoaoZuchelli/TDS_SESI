@@ -13,7 +13,7 @@ if (media >= 7.0){
 }else{
     console.log("Reprovado");
     
-}
+} 
 console.log("Media:" + media.toFixed(1) ) ;
 
 
