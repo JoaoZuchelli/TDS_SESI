@@ -3,4 +3,5 @@ let contador = 0 ;
         console.log(" Item no seu inventario : " + contador);
         contador++;
     }
+    
   
