@@ -1,6 +1,6 @@
 const hardware = ["culer", "monitor", "mouse", "placa de video, Memoria Ram"];
  
-hardware.shift(); // remove a primeira palavrea
+hardware.shift(hardware[0]); // remove a primeira palavrea
 hardware.push("CPU"); // acrescenta uma palavra
 
 
