@@ -4,9 +4,7 @@ function criarCalcularDesconto (desconto){
     }
 }
 
-const desconto10 = criarCalcularDesconto(0.10);
-const desconto50 = criarCalcularDesconto(0.50);
+const desconto50 = criarCalcularDesconto(0.15);
 
-console.log(desconto10(200));
-console.log(desconto50(1230));
+console.log(desconto50(500));
 
