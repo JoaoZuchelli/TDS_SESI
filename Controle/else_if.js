@@ -9,7 +9,7 @@ media = (n1 + n2 + n3) /2;
 
 if (media >= 7.0){
     console.log("Aprovado");
-}else if(media <= 7.0 && media >= 5.0 ){
+}else if(media < 7.0 && media >= 5.0 ){
     console.log("Recuperaçao");
 }else{
     console.log("Reprovado");
