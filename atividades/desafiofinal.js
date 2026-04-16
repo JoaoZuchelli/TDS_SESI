@@ -1,30 +1,33 @@
-const hardware = ["culer", "monitor", "mouse", "placa de video", "Memoria Ram"];
+
+const estoque = ["Placa de video", "Placa mae", "SSD", "Processador", "Monitor"];
+estoque.push("Memoria Ram");
+let clienteNome = "Joao";
+let clienteIdade = 16;
+let possuiCupom = true;
+let valorTotal = 2000;
+let quantidadeItens = estoque.length;
+
+function processarVenda(valorTotal, cupomAtivo)
+{
+    var verificar = valorTotal >= 500 || cupomAtivo === true ? valorTotal * 0.55 : valorTotal;
+    return (verificar);
+}
  
-var clienteNome = "Joao";
+if (clienteIdade >= 16)
+{
+    console.log(`Venda autorizada para: ${clienteNome}\n`);
+}
 
-var possuiCupom =  true
- 
-var clienteIdade = 16
-  
-console.log(clienteNome);
-console.log(clienteIdade);
-console.log(possuiCupom);
+else 
+{
+    console.log(`Venda nao permitida: Idade insuficiente.`);
+}
 
-hardware.shift(hardware[0])
-hardware.push("CPU"); 
+for (let i = 0; i < quantidadeItens; i++)
+{
+    console.log (`Item enviado: ${estoque[i]}... Conferido`);
+}
+estoque.shift();
 
-
-console.log(hardware);
-
-
- function processarVenda (valortotal, cupomativo, quantidadeitens) {
-  valortotal = 500 || cupomativo *0.15 || quantidadeitens
- 
- }
-
- let desconto = processarVenda (0.15)
-
-
-console.log(desconto(500));
-
- 
+let quantidadeFinalItens = estoque.length;
+console.log(`Relatorio da loja: Cliente ${clienteNome} processou um pedido de R$${processarVenda(valorTotal, possuiCupom)}. Itens restantes no estoque: ${quantidadeFinalItens}. `);
